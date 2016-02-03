@@ -35,7 +35,7 @@ a:link, a:visited, a:hover, a:active
 // header
 .header
   width: 100%
-  padding: 28px 0 10
+  padding: 28px 0 10px
   background: url('/images/bg-header.gif') repeat-x
   box-shadow: 0 0 10px 1px #e3e3e3
 
@@ -69,10 +69,9 @@ a:link, a:visited, a:hover, a:active
       font-size: 1.3rem
       letter-spacing: 1px
       transition: 0.15s
-    .active a
-    a:hover
-      background-color: #d03c56
-      color: #fff
+  .nav-item.active a, .nav-item a:hover
+    background-color: #d03c56
+    color: #fff
 
 
 // wrapper
@@ -135,7 +134,7 @@ a:link, a:visited, a:hover, a:active
   list-style-type: none
   .scroll-item a
     display: block
-    padding: 10px, 15px
+    padding: 10px 15px
     color: #333
     font-size: 0
     transition: background-color 0.1s
