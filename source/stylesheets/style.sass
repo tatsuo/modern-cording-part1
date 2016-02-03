@@ -226,6 +226,7 @@ a:link, a:visited, a:hover, a:active
   counter-reset: ranking
   .ranking-item
     margin-top: 15px
+    position: relative
     a
       display: block
       font-size: 0
@@ -248,35 +249,32 @@ a:link, a:visited, a:hover, a:active
   .image
     width: 55px
     height: 55px
+    margin-right: 20px
   .text
     display: inline-block
-    width: 182px
+    width: 200px
     color: #100
     vertical-align: top
     font-size: 1.2rem
     line-height: 1.5
   .order
-    display: inline-block
-    width: 18px
-    height: 18px
-    margin: 0 10px
+    position: absolute
+    top: -9px
+    left: 44px
+    width: 20px
+    height: 20px
     border: 1px solid #ccc
+    border-radius: 50%
     color: #aaa
-    vertical-align: 20px
     text-align: center
     font-weight: bold
-    line-height: 16px
-    -webkit-transform: rotate(45deg)
-    -ms-transform: rotate(45deg)
-    transform: rotate(45deg)
+    line-height: 18px
+
   .order:before
     content: counter(ranking)
     counter-increment: ranking
     display: inline-block
     font-size: 1.0rem
-    -webkit-transform: rotate(-45deg)
-    -ms-transform: rotate(-45deg)
-    transform: rotate(-45deg)
 
 .documents
   margin: 10px 10px 30px
